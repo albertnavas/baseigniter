@@ -12,7 +12,7 @@ Integrations
 - Tank Auth (User management)
  
 Design and plugins
-- Twitter Bootstrap
+- Twitter Bootstrap (Front-end framework)
 - JQuery
 - Uploadify (Upload plugin)
  
