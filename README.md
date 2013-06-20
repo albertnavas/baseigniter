@@ -21,7 +21,7 @@ Integrations
  
 Design and plugins
 - Twitter Bootstrap (Front-end framework)
-- JQuery
+- jQuery
 - Uploadify (Upload plugin)
  
 Functions
