@@ -38,25 +38,7 @@
 |
 */
 
-/*
-Paginas que existiran y lo que haran
-profile_config = Pagina que editas los datos de tu perfil
-user/SERGI = pagina de perfil de sergi
-user/SERGI/friends = pagina que muestra los amigos de sergi
-user/SERGI/photos = pagina que LISTA las fotos del usuario
-photo/64372 = pagina que MUESTRA la foto y posibilidad de comentarla
-welcome_config = pagina donde editas la configuracion de: donde estoy, tipo de viaje blablabla
-profile_config = pagina donde editas la configuracion del usuario
-services/hotels = Muestra hoteles/pisos DEL PAIS DONDE ESTOY 
-services/mobility(transports) = Muestra transportes DEL PAIS DONDE ESTOY 
-services/restaurants = Restaurantes DONDE ESTOY
-services/activities = Excursiones/servicios donde estoy
-services/leisure = Ocio donde estoy
-services/others = Servicios varios donde estoy
-DONDE ESTOY = PAIS
-*/
-
-$route['default_controller'] = "home";
+$route['default_controller'] = "front";
 $route['remember_password'] = "auth/forgot_password";
 $route['404_override'] = '';
 

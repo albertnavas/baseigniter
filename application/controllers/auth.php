@@ -284,8 +284,6 @@ class Auth extends CI_Controller
 					foreach ($errors as $k => $v)	$data['errors'][$k] = $this->lang->line($v);
 				}
 			}
-			$data['showchat']=false;
-			$this->load->view('templates/head.php', $data);
 			$this->load->view('forgot_password', $data);
 		}
 	}

@@ -9,16 +9,23 @@ class Users_model extends CI_Model
 		$this->user_id = $ci->session->userdata('user_id');
 	}
 	
-	public function getUserInfo($user_id)
+	function insertProfilePicId($imgFile)
 	{
-		$query = $this->db->get_where('users', array('id' => $user_id));
-		$data = $query->result_array();
-		return $data[0];
+
+		$data['profile_photo'] = $imgFile;
+		$this->db->where('id', $this->user_id);
+
+		$this->db->update('users', $data); 
+
+		return $imgFile;
 	}
 	
 	function getAllData($user_id=null)
 	{
 		$out['data'] = $this->getUserDataFromUserId($user_id);
+		if (empty($out['data']['profile_photo'])) {
+			$out['data']['profile_photo'] = 'default_profile.png';
+		}
 		return $out;
 	}
 	

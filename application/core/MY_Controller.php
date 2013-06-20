@@ -8,6 +8,14 @@ class MY_Controller extends CI_Controller {
 		$this->ci =& get_instance();
 		$this->user_id = $this->ci->session->userdata('user_id');
 		
+		// Loggin
+		if (!$this->tank_auth->is_logged_in()) {
+			$this->showUnLogged();
+		} else {
+			$this->showLogged();
+		}
+		// ****************
+		
 	}
  
 	public function index() {
@@ -17,11 +25,18 @@ class MY_Controller extends CI_Controller {
 	{
 		$uid = $this->user_id;
 		$u_data = $this->Users_Model->getUserDataFromUserId($uid);
+		$this->islogged = true;
 	}
 
 	public function showUnLogged()
 	{
-		$this->load->view('home');
+		$url = $this->uri->segment(1);
+		if (!empty($url)) {
+			redirect('http://www.baseigniter.com', 301);
+			exit;
+		} else {
+			$this->load->view('home');
+		}
 	}
 	
 	public function init_header($data)

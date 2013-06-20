@@ -34,20 +34,22 @@ if(form_error($username['name']) != "" OR form_error($email['name']) != "" OR fo
 	$display_register_form = 'display:block;';
 }
 ?><!DOCTYPE html>
+<a href="https://github.com/albertnavas/baseigniter" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title><?=_('BaseIgniter')?></title>
+	<title>BaseIgniter</title>
 	
-	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap-responsive.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="/public/img/favicon.ico">
+	
+	<link rel="stylesheet" type="text/css" href="/public/plugins/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="/public/plugins/bootstrap/css/bootstrap-responsive.css" />
 	<link rel="stylesheet" type="text/css" href="/public/css/custom.css" />
 	
 	<script type="text/javascript" src="/public/js/jquery-1.8.2.js"></script>
 	<script type="text/javascript" src="/public/js/jquery-ui.js"></script>
-	<script type="text/javascript" src="/public/js/jquery.lazyload.min.js"></script>
-	<script type="text/javascript" src="/public/uploadify/jquery.uploadify-3.1.min.js"></script>
-	<script type="text/javascript" src="/public/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/public/plugins/uploadify/jquery.uploadify-3.1.min.js"></script>
+	<script type="text/javascript" src="/public/plugins/bootstrap/js/bootstrap.js"></script>
 	<script type="text/javascript" src="/public/js/custom.js"></script>
 	
 </head>
@@ -55,8 +57,8 @@ if(form_error($username['name']) != "" OR form_error($email['name']) != "" OR fo
 	<div class="container">
 		<div class="row-fluid" id="main_description">
 			<div class="span6 offset3">
-				<h3><?=_('¿Qué es BaseIgniter?')?></h3>
-				<p></p>
+				<h3>¿What is BaseIgniter?</h3>
+				<p>BaseIgniter is a project based on Code Igniter so you can start your website with user management, very easy. A part also includes Twitter Bootstrap and some plugin and functions to load header and footer.</p>
 			</div>
 		</div>
 		<?
@@ -88,19 +90,18 @@ if(isset($errors_login) AND count($errors_login) > 0): ?>
 </div>
 <? endif; ?>
 		<?php echo form_open('/auth/login',array('class' => 'form-signin')); ?>
-		<h2 class="form-signin-heading"><?=_('Inicie sessión')?></h2>
-		<input type="text" name="login_user" class="input-block-level" placeholder="<?=_('Email o nombre de usuario')?>" />
-		<input type="password" name="password_user" class="input-block-level" placeholder="<?=_('Password')?>" />
+		<input type="text" name="login_user" class="input-block-level" placeholder="Email or username" />
+		<input type="password" name="password_user" class="input-block-level" placeholder="Password'" />
 		<? if(form_error("login_user") != "" OR form_error("password_user") != "" ): ?>
 		<div class="alert alert-error">
 			<?php echo form_error("login_user"); ?>
 			<?php echo form_error("password_user"); ?>
 		</div>
 	<? endif; ?>
-	<label class="checkbox" for="remember_user"><input type="checkbox" value="1" checked="<?=set_value('remember_user');?>" name="remember_user" id="remember_user"> <?=_('Rcordarme')?></label>
-	<button class="btn btn-large btn-primary" type="submit"><?=_('Entrar')?></button>
+	<label class="checkbox" for="remember_user"><input type="checkbox" value="1" checked="<?=set_value('remember_user');?>" name="remember_user" id="remember_user">Remember me</label>
+	<button class="btn btn-large btn-primary" type="submit">Log In</button>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<?=anchor('/remember_password', _('Recuperar password')); ?>
+	<?=anchor('/remember_password', 'Recovery password'); ?>
 	<?php echo form_close(); ?>
 	<?
 //Mostrar errores de Registro
@@ -119,7 +120,7 @@ if( (isset($errors_register) AND count($errors_register) > 0) ):
 </div>
 <? endif; ?>
 	<div class="row-fluid form-register">
-		<h4><?=_('No estás registrado aún')?>? <? if(!$show_errors_register_form): ?><a href="#" id="register"><?=_('Regístrate aquí')?></a><? endif; ?></h4>
+		<h4>Not register yet? <? if(!$show_errors_register_form): ?><a href="#" id="register">Sign Up here</a><? endif; ?></h4>
 		<? if($show_errors_register_form): ?>
 		<div class="alert alert-error">
 			<?php echo form_error($username['name']); ?>
@@ -130,23 +131,23 @@ if( (isset($errors_register) AND count($errors_register) > 0) ):
 	<? endif; ?>
 		<?php echo form_open('/auth/register',array('id'=>'register_form','style'=>$display_register_form)); ?>
 		<div class="register_form">
-		<?php echo form_label(_('Nombre de usuario'), $username['id']); ?>
+		<?php echo form_label('Username', $username['id']); ?>
 		<?php echo form_input($username); ?>
 		</div>
 		<div>
-		<?php echo form_label(_('Email'), $email['id']); ?>
+		<?php echo form_label('Email', $email['id']); ?>
 		<?php echo form_input($email); ?>
 		</div>
 		<div>
-		<?php echo form_label(_('Contraseña'), $password['id']); ?>
+		<?php echo form_label('Password', $password['id']); ?>
 		<?php echo form_password($password); ?>
 		</div>
 		<div>
-		<?php echo form_label(_('Confirmar contraseña'), $confirm_password['id']); ?>
+		<?php echo form_label('Confirm password', $confirm_password['id']); ?>
 		<?php echo form_password($confirm_password); ?>
 		</div>
 		<div style="float:right;">
-		<?php echo form_submit('register', _('Registrar'),'class="btn btn-large btn-primary"'); ?>
+		<?php echo form_submit('register', 'Sign Up','class="btn btn-large btn-primary"'); ?>
 		</div>
 	<?php echo form_close(); ?>
 </div>
