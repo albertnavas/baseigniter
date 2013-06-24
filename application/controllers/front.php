@@ -17,10 +17,10 @@ class Front extends MY_Controller {
 		$my_user_id = $this->user_id;
 		$data['user'] = $this->Users_Model->getAllData($my_user_id);
 		
-		$this->init_header($data);
+		$this->initHeader($data);
 		$this->load->view('templates/sidebar_left.php', $data);
 		$this->load->view('profile', $data);
-		$this->init_footer($data);
+		$this->initFooter($data);
 	}
 	
 	public function upload_photo_profile()

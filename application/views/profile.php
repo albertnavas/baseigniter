@@ -21,7 +21,7 @@
 			<h3>Design and plugins</h3>
 			<ul>
 				<li>Twitter Bootstrap (Front-end framework)</li>
-				<li>JQuery</li>
+				<li>jQuery</li>
 				<li>Uploadify (Upload plugin)</li>
 			</ul>
 			

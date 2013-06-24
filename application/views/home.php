@@ -91,7 +91,7 @@ if(isset($errors_login) AND count($errors_login) > 0): ?>
 <? endif; ?>
 		<?php echo form_open('/auth/login',array('class' => 'form-signin')); ?>
 		<input type="text" name="login_user" class="input-block-level" placeholder="Email or username" />
-		<input type="password" name="password_user" class="input-block-level" placeholder="Password'" />
+		<input type="password" name="password_user" class="input-block-level" placeholder="Password" />
 		<? if(form_error("login_user") != "" OR form_error("password_user") != "" ): ?>
 		<div class="alert alert-error">
 			<?php echo form_error("login_user"); ?>

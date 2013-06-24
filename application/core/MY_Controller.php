@@ -39,7 +39,7 @@ class MY_Controller extends CI_Controller {
 		}
 	}
 	
-	public function init_header($data)
+	public function initHeader($data)
 	{
 		$data['user'] = $this->Users_Model->getAllData($this->user_id);
 		
@@ -62,7 +62,7 @@ class MY_Controller extends CI_Controller {
 		$this->load->view('templates/header.php', $data);
 	}
 	
-	public function init_footer($data)
+	public function initFooter($data)
 	{
 		$this->load->view('templates/footer.php', $data);
 	}
