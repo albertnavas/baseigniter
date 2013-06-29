@@ -58,7 +58,7 @@ class MY_Controller extends CI_Controller {
 			'/public/plugins/uploadify/jquery.uploadify-3.1.min.js',
 			'/public/js/custom.js',
 		);
-				
+						
 		$this->load->view('templates/header.php', $data);
 	}
 	

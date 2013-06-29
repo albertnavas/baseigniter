@@ -7,8 +7,8 @@
 | These details are used in emails sent by authentication library.
 |--------------------------------------------------------------------------
 */
-$config['website_name'] = 'Intourint';
-$config['webmaster_email'] = 'sergi.fagoaga@gmail.com';
+$config['website_name'] = 'BaseIgniter';
+$config['webmaster_email'] = 'info@baseigniter.com';
 
 /*
 |--------------------------------------------------------------------------

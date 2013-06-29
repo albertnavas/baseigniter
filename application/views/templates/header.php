@@ -36,6 +36,7 @@
 			  	<div class="span3 offset3">
 				    <ul class="nav">
 				      	<li><a href="<?=site_url();?>">Home</a></li>
+				      	<li><a href="/manage">Backend</a></li>
 				      	<li class="dropdown">
 		                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hi, <?=$user['data']['username']?> <b class="caret"></b></a>
 		                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
