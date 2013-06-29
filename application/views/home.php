@@ -1,15 +1,14 @@
 <?
 $username = array(
-		'name'	=> 'username',
-		'id'	=> 'username',
-		'value' => set_value('username'),
-		'maxlength'	=> $this->config->item('username_max_length', 'tank_auth'),
-		'size'	=> 30,
-	);
+	'name'	=> 'username',
+	'id'	=> 'username',
+	'value' => set_value('username'),
+	'maxlength'	=> $this->config->item('username_max_length', 'tank_auth'),
+	'size'	=> 30,
+);
 $email = array(
 	'name'	=> 'email',
 	'id'	=> 'email',
-	'type' => 'email',
 	'value'	=> set_value('email'),
 	'maxlength'	=> 80,
 	'size'	=> 30,

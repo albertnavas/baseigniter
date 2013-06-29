@@ -21,7 +21,10 @@ class Manage extends MY_Controller {
 			$crud->set_table('users');
 			$crud->set_subject('Users');
 			$crud->required_fields('email');
-			$crud->columns('id', 'username', 'password', 'email', 'activated', 'banned', 'ban_reason', 'new_password_key', 'new_password_requested', 'new_email', 'new_email_key', 'last_ip', 'last_login', 'created', 'modified', 'profile_photo');
+			$crud->columns('id', 'username', 'email', 'activated', 'banned', 'last_ip', 'last_login', 'created', 'profile_photo');
+			
+			$crud->unset_edit();
+			$crud->unset_delete();
 			
 			$output = $crud->render();
 			
