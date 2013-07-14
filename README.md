@@ -27,3 +27,11 @@ Design and plugins
 Functions
 - Functions (init_header, init_footer)
 - My_controller base extended to CI_controller
+
+Install
+===========
+- Import SQL tables in you database
+- Put files in your server
+- Change in CodeIgniter files, the parameters in config/database.php
+
+Done.
