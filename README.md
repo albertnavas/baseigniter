@@ -18,6 +18,7 @@ Database:
 Integrations
 - Code Igniter (Framework)
 - Tank Auth (User management)
+- grocery CRUD (Automatic forms and administration for your database tables)
  
 Design and plugins
 - Twitter Bootstrap (Front-end framework)
