@@ -16,13 +16,14 @@
 			<ul>
 				<li>Code Igniter (Framework)</li>
 				<li>Tank Auth (User management)</li>
+				<li>grocery CRUD (Automatic forms and administration for your database tables)</li>
 			</ul>
 			
 			<h3>Design and plugins</h3>
 			<ul>
 				<li>Twitter Bootstrap (Front-end framework)</li>
 				<li>jQuery</li>
-				<li>Uploadify (Upload plugin)</li>
+				<li>Fine Uploader (Upload plugin)</li>
 			</ul>
 			
 			<h3>Functions</h3>

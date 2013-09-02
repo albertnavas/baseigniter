@@ -1,19 +1,15 @@
 $(document).ready(function() {
-
-	$(function() {
-		$('#file_upload').uploadify({
-			'swf'      : '/public/plugins/uploadify/uploadify.swf',
-			'uploader' : '/front/upload_photo_profile',
-			'multi'    : false,
-			'buttonText' : 'Upload profile photo',
-			'height'   : 20,
-			'width'   : 140 ,
-			'onUploadSuccess' : function(file, data, response) {
-				$('#profile_pic').attr("src", "/public/img/users/"+data);
+	
+	$("#fine-uploader").fineUploader({
+        request: {
+            endpoint: '/front/upload_photo_profile'
+        }
+    })
+		.on('complete', function(event, id, fileName, responseJSON) {
+			if (responseJSON.success) {
+				$('#profile_pic').attr("src", "/public/img/users/"+responseJSON.data);
 			}
 		});
-	});
-
 	//Register
 	$("#register").click(function(e){
 		e.preventDefault();

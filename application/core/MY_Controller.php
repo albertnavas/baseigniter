@@ -48,14 +48,14 @@ class MY_Controller extends CI_Controller {
 			'/public/plugins/bootstrap/css/bootstrap-responsive.css',
 			'/public/css/custom.css',
 			'/public/css/jquery-ui-1.9.2.custom.css',
-			'/public/plugins/uploadify/uploadify.css',
+			'/public/plugins/fineuploader/fineuploader-3.8.0.css',
 		);
 		
 		$data['js'] = array (
 			'/public/js/jquery-1.8.2.js',
 			'/public/js/jquery-ui.js',
 			'/public/plugins/bootstrap/js/bootstrap.js',
-			'/public/plugins/uploadify/jquery.uploadify-3.1.min.js',
+			'/public/plugins/fineuploader/jquery.fineuploader-3.8.0.min.js',
 			'/public/js/custom.js',
 		);
 						
