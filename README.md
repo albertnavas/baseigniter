@@ -23,7 +23,7 @@ Integrations
 Design and plugins
 - Twitter Bootstrap (Front-end framework)
 - jQuery
-- Uploadify (Upload plugin)
+- Fine Uploader (Upload plugin)
  
 Functions
 - Functions (init_header, init_footer)
