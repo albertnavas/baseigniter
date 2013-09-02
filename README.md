@@ -18,12 +18,21 @@ Database:
 Integrations
 - Code Igniter (Framework)
 - Tank Auth (User management)
+- grocery CRUD (Automatic forms and administration for your database tables)
  
 Design and plugins
 - Twitter Bootstrap (Front-end framework)
 - jQuery
-- Uploadify (Upload plugin)
+- Fine Uploader (Upload plugin)
  
 Functions
 - Functions (init_header, init_footer)
 - My_controller base extended to CI_controller
+
+Install
+===========
+- Import SQL tables in you database
+- Put files in your server
+- Change in CodeIgniter files, the parameters in config/database.php
+
+Done.
