@@ -54,7 +54,7 @@ class Front extends MY_Controller {
 				echo json_encode($success);
 				
 			} else {
-				echo _('Invalid file type.');
+				echo 'Invalid file type.';
 			}
 		}
 	}
