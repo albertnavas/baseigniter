@@ -9,7 +9,7 @@ class Manage extends MY_Controller {
 		$this->load->database();
 		$this->load->helper('url');
 		
-		$this->load->library('grocery_CRUD');	
+		$this->load->library('Grocery_CRUD');	
 	}
 	
 	function index()
@@ -17,7 +17,7 @@ class Manage extends MY_Controller {
 		try{
 			$crud = new grocery_CRUD();
 
-			$crud->set_theme('datatables');
+			$crud->set_theme('twitter-bootstrap');
 			$crud->set_table('users');
 			$crud->set_subject('Users');
 			$crud->required_fields('email');

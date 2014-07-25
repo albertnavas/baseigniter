@@ -1,4 +1,4 @@
-	<div class="span9">
+	<div class="col-md-9">
 		<div class="well">
 			<h1>BaseIgniter</h1>
 			<p>BaseIgniter is a project based on Code Igniter so you can start your website with user management, very easy. A part also includes Twitter Bootstrap and some plugin and functions to load header and footer.</p>
@@ -16,13 +16,13 @@
 			<ul>
 				<li>Code Igniter (Framework)</li>
 				<li>Tank Auth (User management)</li>
-				<li>grocery CRUD (Automatic forms and administration for your database tables)</li>
+				<li>Grocery CRUD 1.4.1 (Automatic forms and administration for your database tables)</li>
 			</ul>
 			
 			<h3>Design and plugins</h3>
 			<ul>
-				<li>Twitter Bootstrap (Front-end framework)</li>
-				<li>jQuery</li>
+				<li>Twitter Bootstrap 3.2 (Front-end framework)</li>
+				<li>jQuery 2.1.1</li>
 				<li>Fine Uploader (Upload plugin)</li>
 			</ul>
 			

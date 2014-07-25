@@ -42,21 +42,18 @@ if(form_error($username['name']) != "" OR form_error($email['name']) != "" OR fo
 	
 	<link rel="shortcut icon" type="image/x-icon" href="/public/img/favicon.ico">
 	
-	<link rel="stylesheet" type="text/css" href="/public/plugins/bootstrap/css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="/public/plugins/bootstrap/css/bootstrap-responsive.css" />
-	<link rel="stylesheet" type="text/css" href="/public/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/public/css/home.css" />
 	
-	<script type="text/javascript" src="/public/js/jquery-1.8.2.js"></script>
-	<script type="text/javascript" src="/public/js/jquery-ui.js"></script>
-	<script type="text/javascript" src="/public/plugins/uploadify/jquery.uploadify-3.1.min.js"></script>
-	<script type="text/javascript" src="/public/plugins/bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="/public/js/custom.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/public/js/home.js"></script>
 	
 </head>
 <body id="home">
 	<div class="container">
-		<div class="row-fluid" id="main_description">
-			<div class="span6 offset3">
+		<div class="row" id="main_description">
+			<div class="col-md-6 col-md-offset-3">
 				<h3>¿What is BaseIgniter?</h3>
 				<p>BaseIgniter is a project based on Code Igniter so you can start your website with user management, very easy. A part also includes Twitter Bootstrap and some plugin and functions to load header and footer.</p>
 			</div>
@@ -64,8 +61,8 @@ if(form_error($username['name']) != "" OR form_error($email['name']) != "" OR fo
 		<?
 if($this->session->flashdata('message')):
 ?>
-<div class="row-fluid">
-	<div class="span6 offset3">
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
 		<div class="alert alert-success">
 			<button type="button" class="close" data-dismiss="alert">x</button>
 			<?=$this->session->flashdata('message');?>
@@ -78,8 +75,8 @@ endif;
 <? 
 //Mostrar errores de login
 if(isset($errors_login) AND count($errors_login) > 0): ?>
-<div class="row-fluid">
-	<div class="span6 offset3">
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
 		<div class="alert alert-error">
 			<button type="button" class="close" data-dismiss="alert">x</button>
 			<? foreach ($errors_login as $error): ?>
@@ -89,16 +86,20 @@ if(isset($errors_login) AND count($errors_login) > 0): ?>
 	</div>
 </div>
 <? endif; ?>
-		<?php echo form_open('/auth/login',array('class' => 'form-signin')); ?>
-		<input type="text" name="login_user" class="input-block-level" placeholder="Email or username" />
-		<input type="password" name="password_user" class="input-block-level" placeholder="Password" />
+		<?php echo form_open('/auth/login',array('class' => 'form-signin', 'rel' => 'form')); ?>
+		<input type="text" name="login_user" class="input-block-level form-control" placeholder="Email or username" />
+		<input type="password" name="password_user" class="input-block-level form-control" placeholder="Password" />
 		<? if(form_error("login_user") != "" OR form_error("password_user") != "" ): ?>
 		<div class="alert alert-error">
 			<?php echo form_error("login_user"); ?>
 			<?php echo form_error("password_user"); ?>
 		</div>
 	<? endif; ?>
-	<label class="checkbox" for="remember_user"><input type="checkbox" value="1" checked="<?=set_value('remember_user');?>" name="remember_user" id="remember_user">Remember me</label>
+	<div class="checkbox">
+		<label class="checkbox" for="remember_user">
+			<input type="checkbox" value="1" checked="<?=set_value('remember_user');?>" name="remember_user" id="remember_user">Remember me
+		</label>
+	</div>
 	<button class="btn btn-large btn-primary" type="submit">Log In</button>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<?=anchor('/remember_password', 'Recovery password'); ?>
@@ -108,8 +109,8 @@ if(isset($errors_login) AND count($errors_login) > 0): ?>
 if( (isset($errors_register) AND count($errors_register) > 0) ):
 	$display_register_form = 'display:block;';
 ?>
-<div class="row-fluid">
-	<div class="span6 offset3">
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
 		<div class="alert alert-error">
 			<button type="button" class="close" data-dismiss="alert">x</button>
 			<? foreach ($errors_register as $error): ?>
@@ -119,7 +120,7 @@ if( (isset($errors_register) AND count($errors_register) > 0) ):
 	</div>
 </div>
 <? endif; ?>
-	<div class="row-fluid form-register">
+	<div class="row form-register">
 		<h4>Not register yet? <? if(!$show_errors_register_form): ?><a href="#" id="register">Sign Up here</a><? endif; ?></h4>
 		<? if($show_errors_register_form): ?>
 		<div class="alert alert-error">

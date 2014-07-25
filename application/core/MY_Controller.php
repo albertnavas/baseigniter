@@ -44,17 +44,14 @@ class MY_Controller extends CI_Controller {
 		$data['user'] = $this->Users_Model->getAllData($this->user_id);
 		
 		$data['css'] = array (
-			'/public/plugins/bootstrap/css/bootstrap.css',
-			'/public/plugins/bootstrap/css/bootstrap-responsive.css',
+			'//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css',
 			'/public/css/custom.css',
-			'/public/css/jquery-ui-1.9.2.custom.css',
 			'/public/plugins/fineuploader/fineuploader-3.8.0.css',
 		);
 		
 		$data['js'] = array (
-			'/public/js/jquery-1.8.2.js',
-			'/public/js/jquery-ui.js',
-			'/public/plugins/bootstrap/js/bootstrap.js',
+			'//code.jquery.com/jquery-2.1.1.min.js',
+			'//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js',
 			'/public/plugins/fineuploader/jquery.fineuploader-3.8.0.min.js',
 			'/public/js/custom.js',
 		);
