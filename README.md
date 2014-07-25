@@ -18,11 +18,11 @@ Database:
 Integrations
 - Code Igniter (Framework)
 - Tank Auth (User management)
-- grocery CRUD (Automatic forms and administration for your database tables)
+- grocery CRUD 1.4.1 (Automatic forms and administration for your database tables)
  
 Design and plugins
-- Twitter Bootstrap (Front-end framework)
-- jQuery
+- Twitter Bootstrap 3.2 (Front-end framework)
+- jQuery 2.1.1
 - Fine Uploader (Upload plugin)
  
 Functions
