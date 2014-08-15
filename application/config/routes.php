@@ -38,8 +38,11 @@
 |
 */
 
-$route['default_controller'] = "front";
-$route['remember_password'] = "auth/forgot_password";
+$route['default_controller'] = "/dashboard/index";
+$route['login'] = "/auth/login";
+$route['logout'] = "/auth/logout";
+$route['register'] = "/auth/create_user";
+$route['forgot_password'] = "/auth/forgot_password";
 $route['404_override'] = '';
 
 

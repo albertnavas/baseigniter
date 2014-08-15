@@ -6,9 +6,9 @@ Demo
 ===========
 Try it in [www.baseigniter.com](http://www.baseigniter.com)
 
-Username: test
+Username: infonacloud@gmail.com
 
-Password: 123456
+Password: password
 
 Includes
 ===========
@@ -17,16 +17,16 @@ Database:
  
 Integrations
 - Code Igniter (Framework)
-- Tank Auth (User management)
-- grocery CRUD (Automatic forms and administration for your database tables)
+- Ion Auth 2.5.2 (User management)
+- grocery CRUD 1.4.1 (Automatic forms and administration for your database tables)
  
 Design and plugins
-- Twitter Bootstrap (Front-end framework)
-- jQuery
+- Twitter Bootstrap 3.2 (Front-end framework)
+- jQuery 2.1.1
 - Fine Uploader (Upload plugin)
  
 Functions
-- Functions (init_header, init_footer)
+- Functions (loadHeader, loadFooter)
 - My_controller base extended to CI_controller
 
 Install

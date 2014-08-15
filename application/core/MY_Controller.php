@@ -9,40 +9,19 @@ class MY_Controller extends CI_Controller {
 		$this->user_id = $this->ci->session->userdata('user_id');
 		
 		// Loggin
-		if (!$this->tank_auth->is_logged_in()) {
-			$this->showUnLogged();
-		} else {
-			$this->showLogged();
+		if (!$this->ion_auth->logged_in()) {
+			redirect('login', 'refresh');
 		}
-		// ****************
 		
 	}
  
 	public function index() {
 	}
 	
-	public function showLogged()
+	public function loadHeader($data)
 	{
-		$uid = $this->user_id;
-		$u_data = $this->Users_Model->getUserDataFromUserId($uid);
-		$this->islogged = true;
-	}
+		$data['user'] = $this->Users_Model->getUser($this->user_id);
 
-	public function showUnLogged()
-	{
-		$url = $this->uri->segment(1);
-		if (!empty($url)) {
-			redirect('http://www.baseigniter.com', 301);
-			exit;
-		} else {
-			$this->load->view('home');
-		}
-	}
-	
-	public function initHeader($data)
-	{
-		$data['user'] = $this->Users_Model->getAllData($this->user_id);
-		
 		$data['css'] = array (
 			'//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css',
 			'/public/css/custom.css',
@@ -59,7 +38,7 @@ class MY_Controller extends CI_Controller {
 		$this->load->view('templates/header.php', $data);
 	}
 	
-	public function initFooter($data)
+	public function loadFooter($data)
 	{
 		$this->load->view('templates/footer.php', $data);
 	}

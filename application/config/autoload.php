@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('session','database','tank_auth','form_validation','security');
+$autoload['libraries'] = array('session','database','Ion_auth','form_validation','security');
 
 
 /*
@@ -96,7 +96,7 @@ $autoload['config'] = array();
 |
 */
 
-$autoload['language'] = array('tank_auth');
+$autoload['language'] = array('ion_auth');
 
 
 /*

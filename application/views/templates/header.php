@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<a href="https://github.com/albertnavas/baseigniter" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;z-index:9999;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -48,9 +49,9 @@
 			      	<li><a href="<?=site_url();?>">Home</a></li>
 			      	<li><a href="/manage">Backend</a></li>
 			      	<li class="dropdown">
-			      		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi, <?=$user['data']['username']?> <span class="caret"></span></a>
+			      		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi, <?=$user['username']?> <span class="caret"></span></a>
 				  		<ul class="dropdown-menu" role="menu">
-		                	<li><a href="<?=site_url('auth/logout');?>">Log Out</a></li>
+		                	<li><a href="/logout">Log Out</a></li>
 		                </ul>
 		            </li>
 			  	</ul>

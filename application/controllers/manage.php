@@ -17,7 +17,8 @@ class Manage extends MY_Controller {
 		try{
 			$crud = new grocery_CRUD();
 
-			$crud->set_theme('twitter-bootstrap');
+			//$crud->set_theme('twitter-bootstrap');
+			$crud->set_theme('datatables');
 			$crud->set_table('users');
 			$crud->set_subject('Users');
 			$crud->required_fields('email');
@@ -29,9 +30,9 @@ class Manage extends MY_Controller {
 			$output = $crud->render();
 			
 			$data = array();
-			$this->initHeader($data);
+			$this->loadHeader($data);
 			$this->load->view('manage_users.php',$output);	
-			$this->initFooter($data);
+			$this->loadFooter($data);
 			
 			
 		}catch(Exception $e){
