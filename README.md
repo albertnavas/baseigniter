@@ -1,6 +1,6 @@
 BaseIgniter 2.0
 ===========
-[![GitHub version](https://badge.fury.io/gh/albertnavas%2Fbaseigniter.svg)](http://badge.fury.io/gh/albertnavas%2Fbaseigniter)
+[![Project version](http://img.shields.io/badge/version-2.0-green.svg?style=flat-square)](https://github.com/albertnavas/baseigniter/releases/tag/v2.0r)
 
 BaseIgniter is a project based on Code Igniter so you can start your website with user management, very easy. A part also includes Twitter Bootstrap and some plugin and functions to load header and footer.
 
