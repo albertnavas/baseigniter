@@ -15,7 +15,7 @@ Password: password
 Includes
 ===========
 Database:
-- SQL tables for user management (Tank Auth integration)
+- SQL tables for user management (Ion Auth integration)
  
 Integrations
 - Code Igniter (Framework)
