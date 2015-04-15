@@ -9,27 +9,27 @@
 			
 			<h3>Database:</h3>
 			<ul>
-				<li>SQL tables for user management (Tank Auth integration)</li>
+				<li>SQL tables for user management (Ion Auth integration)</li>
 			</ul>
 			
 			<h3>Integrations</h3>
 			<ul>
-				<li>Code Igniter (Framework)</li>
-				<li>Ion Auth 2.5.2 (User management)</li>
-				<li>Grocery CRUD 1.4.1 (Automatic forms and administration for your database tables)</li>
+				<li>Code Igniter 3.0 (Framework)</li>
+				<li>Ion Auth 2.6.0 (User management)</li>
+				<li>Grocery CRUD 1.5.0 (Automatic forms and administration for your database tables)</li>
 			</ul>
 			
 			<h3>Design and plugins</h3>
 			<ul>
-				<li>Twitter Bootstrap 3.2 (Front-end framework)</li>
-				<li>jQuery 2.1.1</li>
+				<li>Twitter Bootstrap 3.3.4 (Front-end framework)</li>
+				<li>jQuery 2.1.3</li>
 				<li>Fine Uploader (Upload plugin)</li>
 			</ul>
 			
 			<h3>Functions</h3>
 			<ul>
 				<li>Functions (loadHeader, loadFooter)</li>
-				<li>My_controller base extended to CI_controller</li>
+				<li>My_controller base extended to CI_controller (Here you can specify the css and js files for your project)</li>
 			</ul>
 		</div>
 	</div>
