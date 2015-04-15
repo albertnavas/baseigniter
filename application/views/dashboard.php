@@ -23,13 +23,12 @@
 			<ul>
 				<li>Twitter Bootstrap 3.3.4 (Front-end framework)</li>
 				<li>jQuery 2.1.3</li>
-				<li>Fine Uploader (Upload plugin)</li>
 			</ul>
 			
 			<h3>Functions</h3>
 			<ul>
 				<li>Functions (loadHeader, loadFooter)</li>
-				<li>My_controller base extended to CI_controller (Here you can specify the css and js files for your project)</li>
+				<li>My_controller base extended to CI_controller (here you can specify the css and js files for your project)</li>
 			</ul>
 		</div>
 	</div>
