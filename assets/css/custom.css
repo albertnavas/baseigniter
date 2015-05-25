@@ -1,0 +1,187 @@
+body {
+	font-family: Open Sans, sans-serif;
+	margin-top: 60px !important;
+}
+body#home{
+	padding-top: 10px;
+	padding-bottom: 40px;
+	background-color: #f5f5f5 !important;
+}
+/* Dashboard */
+#box-container {
+	width: 870px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	margin-top: 20px;
+}
+.box-dashboard {
+	width: 274px;
+	height: 182px;
+	margin: 0 0 0 0;
+	padding: 8px;
+	display: block;
+	float: left;
+	border-radius: 0;
+	font-size: 27px;
+	line-height: 35px;
+	color: green;
+}
+.box-dashboard a > div:hover {
+	-webkit-box-shadow: 0 3px 12px hsla(0, 0%, 0%, 0.3), 0 0 5px 2px hsl(205, 100%, 60%);
+	-moz-box-shadow: 0 3px 12px hsla(0, 0%, 0%, 0.3), 0 0 5px 2px hsl(205, 100%, 60%);
+	-box-shadow: 0 3px 12px hsla(0, 0%, 0%, 0.3), 0 0 5px 2px hsl(205, 100%, 60%);
+}
+.box-dashboard a {
+	position: relative;
+	float: none;
+	width: auto;
+	height: 100%;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+}
+.box-dashboard a > div {
+	overflow: hidden;
+	padding: 8px 15px;
+	background: none repeat scroll 0 0 hsl(0, 100%, 100%);
+	box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.25);
+	display: block;
+	height: 100%;
+	top: 0;
+	bottom: 8px;
+	right: 10px;
+	left: 0;
+	position: absolute;
+	width: 258px;
+	height: 166px;
+	z-index: 10;
+	transition-property: transform;
+	-webkit-transition-duration: 0.85s;
+	-moz-transition-duration: 0.85s;
+	transition-duration: 0.85s;
+	-webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	-moz-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	-webkit-transition: opacity 280ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	-moz-transition: opacity 280ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: opacity 280ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url(../img/sprites-lite.png);
+	
+	border-bottom: 3px solid hsl(226, 86%, 50%);
+}
+.box-dashboard a > div > h3 {
+	font-size: 1em;
+	line-height: 29px;
+	margin: 4px 0 0 0;
+	position: relative;
+	overflow: hidden;
+	color: hsl(0, 0%, 47%);
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+}
+.box-dashboard a > div > h3 > wrap-shape {
+	float: right;
+	clear: right;
+	display: block;
+	width: 40px;
+	background: hsla(0, 0%, 0%, 0);
+	height: 40px;
+	font-size: 1em;
+	line-height: 29px;
+}
+.box-dashboard a > div > h3 > text-content {
+
+}
+
+
+
+
+
+.select2-container .select2-choice > .select2-chosen {
+	font-size: 17px;
+}
+
+.center-v {
+	height: 20px;
+}
+.status-info-dictamen {
+	margin-top: -4px;
+}
+.status-info-dictamen .alert {
+	padding-top: 3px;
+	padding-bottom: 3px;	
+}
+
+.form-signin {
+	max-width: 300px;
+	padding: 19px 29px 29px;
+	margin: 0 auto 20px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+}
+
+.form-register {
+	max-width: 500px;
+	padding: 10px 29px 10px;
+	margin: 0 auto 20px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-register .form-register-heading{
+	margin-bottom: 10px;
+}
+.form-register input[type="text"],
+.form-register input[type="password"] {
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+}
+
+div .alert p{
+	margin: 0;
+}
+
+#notify-read a {
+	float: right;
+	color: hsl(240, 100%, 29%);;
+}
+#notify-read a:hover {
+	text-decoration: underline;
+	background-color: white;
+	background-image: none;
+}
+.notify-img {
+	height:18px;
+}
+table td {
+	line-height: 30px !important;
+}
