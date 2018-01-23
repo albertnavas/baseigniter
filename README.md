@@ -6,8 +6,6 @@ BaseIgniter is a project based on Code Igniter so you can start your website wit
 
 Demo
 ===========
-Try it in [www.baseigniter.com](http://www.baseigniter.com)
-
 Username: infonacloud@gmail.com
 
 Password: password
