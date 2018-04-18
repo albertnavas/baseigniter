@@ -2,7 +2,7 @@ BaseIgniter 3.0
 ===========
 [![Project version](http://img.shields.io/badge/version-3.0-green.svg?style=flat-square)](https://github.com/albertnavas/baseigniter/releases/tag/v3.0)
 
-BaseIgniter is a project based on Code Igniter so you can start your website with user management, very easy. A part also includes Twitter Bootstrap and some plugin and functions to load header and footer.
+BaseIgniter is a project based on CodeIgniter so you can start your website with user management, very easy. A part also includes Twitter Bootstrap and some plugin and functions to load header and footer.
 
 Includes
 ===========
