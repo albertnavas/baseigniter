@@ -10,7 +10,7 @@ Database:
 - SQL tables for user management (Ion Auth integration)
  
 Integrations
-- Code Igniter 3.0 (Framework)
+- CodeIgniter 3.0 (Framework)
 - Ion Auth 2.6.0 (User management)
 - grocery CRUD 1.5.0 (Automatic forms and administration for your database tables)
  
